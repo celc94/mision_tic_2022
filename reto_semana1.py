@@ -7,7 +7,7 @@ estaturaÑoño = float(input('Ingrese la estatura de Ñoño en Centímetros: '))
 pesoChavo = int(pesoQuico * 2)
 pesoÑoño = pesoQuico + pesoChavo
 #Se calcula la edad a partir del peso con la fórmula de La fórmula de Perrault Dry
-# Peso = Altura en cm - 100 + ((edad/10) x 0,9) -> se despeja la edad     
+#Peso = Altura en cm - 100 + ((edad/10) x 0,9) -> se despeja la edad     
 edadQuico = (10 * (pesoQuico - estaturaQuico + 100)) / 0.9
 edadChavo = (10 * (pesoChavo - estaturaChavo + 100)) / 0.9
 edadÑoño = (10 * (pesoÑoño - estaturaÑoño + 100)) / 0.9
