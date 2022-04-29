@@ -15,15 +15,16 @@ def f(valorComputador, diaDescuento, descuento):
   valorDescuento = valorComputador - (valorComputador * descuento)
 
   if diaDescuento == 'si':
+        descuento = float(input('Ingrese el valor del descuento: '))
         return print(f'El valor de Computador con descuento es: ${valorDescuento}')  
   elif diaDescuento == 'no':
     return print('No hay día de descuento')
   else:
     return print('Condición no reconocida')
 
-valorComputador = int(input('Ingrese el valor del computador en COP: '))
+valorComputador = float(input('Ingrese el valor del computador en COP: '))
 diaDescuento = (input('Indique si hay día de descuento (si/no): '))
-descuento = float(input('Ingrese el valor del descuento: '))
+
 
 
 f(valorComputador, diaDescuento, descuento)
