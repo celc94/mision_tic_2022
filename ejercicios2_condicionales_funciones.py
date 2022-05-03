@@ -10,7 +10,7 @@ reprobado = int(input('Ingrese el Total de Estudiantes Reprobados: '))
 f(aprobado, reprobado)
 
 #2.	Haga un programa que calcule el valor de un computador si es día de descuento.
-def f(valorComputador, diaDescuento, descuento):
+def f(valorComputador, diaDescuento):
 
   valorDescuento = valorComputador - (valorComputador * descuento)
 
@@ -27,7 +27,7 @@ diaDescuento = (input('Indique si hay día de descuento (si/no): '))
 
 
 
-f(valorComputador, diaDescuento, descuento)
+f(valorComputador, diaDescuento)
 
 #3.	Haga un programa que calcule el salario básico para un empleado sabiendo que el empleado
 #gana un salario bruto, a ese salario bruto se le descuenta el 10% por la retención en la fuente, 
