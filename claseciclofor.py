@@ -31,11 +31,11 @@ list1 = [1,2,3,4,5,6,7,8,9,10]
 for a in list1:
   print (a, end="")
 
-  for i in [2,4,6]:
-  print (i)
+  for i1 in [2,4,6]:
+    print(i1)
 
-  for i in [2,4,6,9]:
-  print ("omar")
+  for i2 in [2,4,6,9]:
+    print("omar")
 
 #Números Pares  
   listaNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -49,4 +49,3 @@ else:
 
 for lista in ['calcetin', 'blusa', 'pantalon']:
   print(f'la lavadora se ha comido mi ',lista)
-  
