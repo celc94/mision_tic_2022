@@ -1,4 +1,7 @@
 #Imprimir 10 números
+from turtle import distance
+
+
 i = 0
 while i <= 10:
   print(i)
@@ -60,3 +63,4 @@ print('Multiplos de 3 comprendidos entre 3 y 15:')
 while i <=15:    
     print(f"{i}")
     i=i+3
+
