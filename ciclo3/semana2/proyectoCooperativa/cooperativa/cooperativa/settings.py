@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'appcooperativa', #Se inicializa la aplicación
 ]
 
 MIDDLEWARE = [
@@ -75,8 +76,17 @@ WSGI_APPLICATION = 'cooperativa.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        #Se realiza la conexión con la base de datos
+        'HOST':'ec2-34-231-42-166.compute-1.amazonaws.com',
+        'DATABASE_PORT':'5432',
+        'USER':'ecjjfxkrfzayak',
+        'PASSWORD':'58850453e4f8b9ae1185cdf92ecbb14fc0d3ac8941708c1124baa58924777d2b',
+        'NAME':'db7uhh4mt2efg0', #Database en Heroku
+        #Los datos anteriores se tren de Heroku
+        'ENGINE':'django.db.backends.postgresql', #Se cambia al motor de bd, en este caso Postgresql
+
+        #'ENGINE': 'django.db.backends.sqlite3',
+        #'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
