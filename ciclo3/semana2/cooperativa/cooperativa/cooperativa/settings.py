@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-y8_ti!8%4!7*@y%&-^sdj-c272g69h16c^__-7ri-x(p&7ab*p'
+SECRET_KEY = 'django-insecure-jyb#qfh8#sl)p5@-eznbl_upb^xrkk6o^a*nql@_4j3r+jrt@b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,8 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #Se coloca el nombre de la aplicación
-    'appcooperativa', #De aquí pasamos a Database
 ]
 
 MIDDLEWARE = [
@@ -75,7 +73,7 @@ WSGI_APPLICATION = 'cooperativa.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = { #Se hace una conexión con Postgress
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',

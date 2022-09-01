@@ -23,4 +23,3 @@ class Credito(models.Model):
     #Llave foranea, documento del cliente
     documento = models.ForeignKey(Cliente, on_delete=models.CASCADE) #Si elimino un dato en la tabla credito, se elimna en la tabla cliente
     codigo = models.ForeignKey(Lineas_De_Credito, on_delete=models.CASCADE)
-    
