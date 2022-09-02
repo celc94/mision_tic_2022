@@ -9,7 +9,7 @@ class Cliente(models.Model): #Hereda unas funciones de una superclase Model
     apellido = models.CharField(max_length=30)
     correo = models.CharField(max_length=20)
     celular = models.CharField(max_length=15)
-    #Para mirar los datos de las clases a través de un método en el admin de djangoa
+    #Para mirar los datos de las clases a través de un método en el admin de django
     def __str__(self):
         return self.documento, self.nombre, self.apellido, self.celular, self.correo
 
