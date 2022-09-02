@@ -9,6 +9,9 @@ class Cliente(models.Model): #Hereda unas funciones de una superclase Model
     apellido = models.CharField(max_length=30)
     correo = models.CharField(max_length=20)
     celular = models.CharField(max_length=15)
+    #Para mirar los datos de las clases a través de un método en el admin de djangoa
+    def __str__(self):
+        return self.documento, self.nombre, self.apellido, self.celular, self.correo
 
 class Lineas_De_Credito(models.Model):
     codigo = models.IntegerField(primary_key=True)
@@ -23,3 +26,6 @@ class Credito(models.Model):
     #Llave foranea, documento del cliente
     documento = models.ForeignKey(Cliente, on_delete=models.CASCADE) #Si elimino un dato en la tabla credito, se elimna en la tabla cliente
     codigo = models.ForeignKey(Lineas_De_Credito, on_delete=models.CASCADE)
+
+ 
+
